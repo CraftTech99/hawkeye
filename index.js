@@ -4,9 +4,9 @@ client.on('ready', () => {
 });
 client.on('ready', () => {
     client.user.setActivity('https://git.io/d.js-heroku', {type: 'Official PlatinumCraft Bot'});
-
+});
 client.on("message", (message) => {
-  
+  if (!msg.content.startsWith(process.env.PREFIX) || !msg.guild) return;
   if (message.content.startsWith("/help")) {
     message.channel.send("type /invite to get the invite link of this server~");
   } else
