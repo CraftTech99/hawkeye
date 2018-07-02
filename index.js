@@ -14,7 +14,7 @@ client.on('ready', () => {
     message.channel.send("type /invite to get the invite link of this server~");
   }
 
-  if (message.content.startsWith(PREFIX + "invite")) {
+  if (message.content.startsWith("/invite")) {
     message.channel.send("https://discord.gg/qtqE7uZ");
   }
   
