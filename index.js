@@ -3,13 +3,17 @@ client.on('ready', () => {
   console.log('I am ready!');
 });
 
+client.config = require('botconfig.json');
 
 client.on('ready', () => {
     client.user.setActivity('https://github.com/CraftTech99/hawkeye', {type: 'Official PlatinumCraft Bot'});
 });
 
 
-  client.on("message", (message) => {
+client.on("message", (message) => {
+  
+  if (!message.content.startsWith(prefix) || message.author.bot) return;
+   client.on("message", (message) => {
   if (message.content.startsWith("/help")) {
     message.channel.send("type /invite to get the invite link of this server~");
   }
