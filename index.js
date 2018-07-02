@@ -7,7 +7,7 @@ const prefix = "/";
 
 client.on("message", (message) => {
   
-   if (!message.content.startsWith(prefix)) return;
+   if (/message.content.startsWith(prefix)) return;
   
   if (message.content.startsWith(prefix + "/help")) {
     message.channel.send("type /invite to get the invite link of this server~");
