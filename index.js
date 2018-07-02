@@ -2,6 +2,8 @@ const Discord = require('discord.js');const client = new Discord.Client();
 client.on('ready', () => {  
   console.log('I am ready!');
 });
+client.on('ready', () => {
+    client.user.setActivity('https://git.io/d.js-heroku', {type: 'Official PlatinumCraft Bot'});
 
 client.on("message", (message) => {
   
