@@ -3,9 +3,14 @@ client.on('ready', () => {
   console.log('I am ready!');
 });
 
-client.on('message', message => {    
-  if (message.content === '/help') { 
-    message.reply('Help? whats that? wait what dictionary u use? XD');  
-	}});
+client.on("message", (message) => {
+  if (message.content.startsWith("/help")) {
+    message.channel.send("Nothing here for now but do see the channel #rules to know about the server rules");
+  } else
+
+  if (message.content.startsWith("/invite")) {
+    message.channel.send("https://discord.gg/zPZJah");
+  }
+});
 
 client.login(process.env.BOT_TOKEN);
