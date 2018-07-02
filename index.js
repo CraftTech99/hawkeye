@@ -9,9 +9,8 @@ client.on('ready', () => {
 });
 
 
-client.on("message", (message) => {
-  if (/msg.content.startsWith(process.env.PREFIX) || !msg.guild) return;
-  if (message.content.startsWith(PREFIX + "help")) {
+  client.on("message", (message) => {
+  if (message.content.startsWith("/help")) {
     message.channel.send("type /invite to get the invite link of this server~");
   }
 
@@ -19,8 +18,6 @@ client.on("message", (message) => {
     message.channel.send("https://discord.gg/qtqE7uZ");
   }
   
-  });
-  client.on("message", (message) => {
   if (message.content.startsWith("invite link pls")) {
     message.channel.send("https://discord.gg/qtqE7uZ");
   }
