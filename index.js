@@ -14,11 +14,11 @@ client.on("message", (message) => {
   
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-  if (message.content.startsWith("/help")) {
+  if (message.content.startsWith("help")) {
     message.channel.send("type /invite to get the invite link of this server~");
   }
 
-  if (message.content.startsWith("/invite")) {
+  if (message.content.startsWith("invite")) {
     message.channel.send("https://discord.gg/qtqE7uZ");
   }
   
