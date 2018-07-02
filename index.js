@@ -9,11 +9,11 @@ client.on("message", (message) => {
   
    if (/message.content.startsWith(prefix)) return;
   
-  if (message.content.startsWith(prefix + "/help")) {
+  if (message.content.startsWith(prefix + "help")) {
     message.channel.send("type /invite to get the invite link of this server~");
   } else
 
-  if (message.content.startsWith(prefix + "/invite")) {
+  if (message.content.startsWith(prefix + "invite")) {
     message.channel.send("https://discord.gg/zPZJah");
   }
 });
