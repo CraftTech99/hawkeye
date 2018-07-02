@@ -4,8 +4,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {    
-  if (message.content === 'ping') { 
-    message.reply('pong');  
+  if (message.content === '/help') { 
+    message.reply('Help? whats that? wait what dictionary u use? XD');  
 	}});
 
 client.login(process.env.BOT_TOKEN);
