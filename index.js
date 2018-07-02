@@ -5,7 +5,7 @@ client.on('ready', () => {
 
 client.on("message", (message) => {
   if (message.content.startsWith("/help")) {
-    message.channel.send("Nothing here for now but do see the channel #rules to know about the server rules");
+    message.channel.send("/invite : to get the invite link of this server");
   } else
 
   if (message.content.startsWith("/invite")) {
