@@ -10,10 +10,10 @@ client.on("message", (message) => {
   } else
 
   if (message.content.startsWith("/invite")) {
-    message.channel.send("https://discord.gg/zPZJah");
+    message.channel.send("https://discord.gg/qtqE7uZ");
   }
   if (message.content.startsWith("invite link pls")) {
-    message.channel.send("https://discord.gg/zPZJah");
+    message.channel.send("https://discord.gg/qtqE7uZ");
   }
 });
 
