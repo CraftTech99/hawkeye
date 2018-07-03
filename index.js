@@ -12,7 +12,7 @@ client.on('ready', () => {
 client.on("message", (message) => {
   
   if (message.content.startsWith(`${prefix}help`)) {
-    message.channel.send("type /invite to get the invite link of this server~");
+    message.channel.send("type /invite to get the invite link of this server~ <#458139598556758016>");
   } else
 
   if (message.content.startsWith(`${prefix}invite`)) {
