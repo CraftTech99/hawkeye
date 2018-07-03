@@ -12,8 +12,9 @@ client.on('ready', () => {
 client.on("message", (message) => {
   
   if (message.content.startsWith(`${prefix}help`)) {
-    message.channel.send("type /invite to get the invite link of this server~ <#458139598556758016>");
-  } else
+    message.channel.send("```My Commands``````/invite```and if u want to know about the server please see these channels: ```<#458139412249968641>, <#458139598556758016>");
+  } 
+ 
 
   if (message.content.startsWith(`${prefix}invite`)) {
     message.channel.send("https://discord.gg/zPZJah");
