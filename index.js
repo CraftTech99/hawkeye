@@ -12,7 +12,7 @@ client.on('ready', () => {
 client.on("message", (message) => {
   
   if (message.content.startsWith(`${prefix}help`)) {
-    message.channel.send("```My Commands``````/invite```and if u want to know about the server please see these channels: ```<#458139412249968641>, <#458139598556758016>");
+    message.channel.send("```My Commands``````/invite```and if u want to know about the server please see these channels: <#458139412249968641>, <#458139598556758016>");
   } 
  
 
