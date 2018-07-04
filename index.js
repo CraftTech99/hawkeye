@@ -17,7 +17,7 @@ client.on("message", (message) => {
  
 
   if (message.content.startsWith(`${prefix}invite`)) {
-    message.channel.send("https://discord.gg/zPZJah");
+    message.channel.send("https://discord.gg/xueJxZB");
   }
 });
 
