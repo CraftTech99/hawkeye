@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('ready', () => {
-        client.user.setGame('PlatinumCraft');
+        client.user.setGame('PlatinumCraft | /help');
     });
 
 client.on("message", (message) => {
